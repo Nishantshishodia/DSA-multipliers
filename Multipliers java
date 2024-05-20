@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class multipliers {
+    public static void multiplefinding(int n, int k){
+        if(k==1){
+            System.out.println(n);
+            return;
+        }
+        multiplefinding(n,k-1);
+        System.out.println(n*k);
+        }
+    public static void main(String[]args){
+     // function calling 
+     multiplefinding(24,5);
+     System.out.println();
+
+    }
+}
